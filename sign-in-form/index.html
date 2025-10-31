@@ -1,0 +1,44 @@
+<!DOCTYPE html>     <!-- ประกาศให้ทราบว่าเอกสารนี้ใช้ HTML5 -->
+<html lang="en">    <!-- ระบุภาษาหลักของเอกสารใช้ภาษาอังกฤษ -->
+
+    <!-- ส่วน head ของเอกสาร -->
+    <!-- ระบุใช้การเข้ารหัสอักขระแบบ UTF-8 -->
+    <!-- ปรับขนาดความกว้างเท่ากับหน้าจออุปกรณ์และระดับการซูมเริ่มต้นเป็น 1.0 -->
+    <!-- หัวข้อเอกสารตั้งชื่อว่า "Sign In" -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+
+<!-- ส่วน body ของเอกสาร -->
+<body>
+    <main>
+        <!-- แท็กหัวข้อหลักข้อความว่า "Sign In" -->
+        <!-- สร้างแบบฟอร์มสำหรับรับข้อมูลจากผู้ใช้ ระบุปลายทางที่ส่งข้อมูลและวิธีการส่ง -->
+        <!-- กำหนดป้ายชื่อ, ข้อความชื่อ, สร้างช่องกรอกข้อมูล email, password และกำหนดให้จำเป็นต้องกรอกข้อมูล -->
+        <h1>Sign In</h1>
+        <form action="/signin" method="post">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+                <p>Password must be between 8 and 20 characters long.</p>
+            </div>
+
+            <!-- สร้างปุ่ม submit โดยเขียนว่า Sign In-->
+            <div>
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
+
+        <!-- แจ้งหากไม่มี account ให้สมัครโดยสร้างลิงก์ไปยังหน้าสมัครสมาชิก -->
+        <!-- สำหรัลผู้ที่ลืมรหัส สร้างลิงค์บนข้อความให้ไปยังหน้าลืมรหัสผ่าน -->
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p><a href="forget-password.html">Forgot Password?</a></p>
+    </main>
+</body>
+</html>

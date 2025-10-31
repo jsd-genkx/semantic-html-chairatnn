@@ -1,0 +1,70 @@
+<!DOCTYPE html>   <!-- ประกาศให้ทราบว่าเอกสารนี้ใช้ HTML5 -->
+<html lang="en">  <!-- ระบุภาษาหลักของเอกสารใช้ภาษาอังกฤษ -->
+    
+    <!-- ส่วน head ของเอกสาร -->
+    <!-- ระบุใช้การเข้ารหัสอักขระแบบ UTF-8 -->
+    <!-- ปรับขนาดความกว้างเท่ากับหน้าจออุปกรณ์และระดับการซูมเริ่มต้นเป็น 1.0 -->
+    <!-- หัวข้อเอกสารตั้งชื่อว่า "Resume of John Doe" -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume of John Doe</title>
+</head>
+
+    <!-- ส่วน body ของเอกสาร -->
+<body>
+    <!-- ประกาศหัวข้อใหญ่สุด "ชื่อ-นามสกุล" และ ส่วนย่อหน้า "ตำแหน่งงาน" -->
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <main>
+        <!-- ประกาศส่วนของ id=about-me -->
+        <!-- ส่วนของการดึงรูปภาพจาก source มาแสดงผล หากไม่สามารถโหลดรูปได้ให้แสดงผลคำว่า "John Doe" ใส่คำอธิบายประกอบรูปภาพว่า "John Doe" และมีแท็ก <p> บรรยายเสริมเกี่ยวกับประสบการณ์ -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <figure>
+                <img src="https://introduction-to-web-application.vercel.app/profile.jpg" alt="John Doe">
+                <figcaption>John Doe</figcaption>
+            </figure>
+            <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <!-- ประกาศส่วนของ id=experience -->
+        <!-- แสดงผลประสบการณ์ ตำแหน่งงาน บริษัท ช่วงเวลา และหน้าที่งานที่ทำ -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <article>
+                <h3>Web Developer</h3>
+                <p>XYZ Company - June 2020 to Present</p>
+                <ul>
+                    <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+                    <li>Collaborated with team members to implement new features and improve existing ones.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ประกาศส่วนของ id=education -->
+        <!-- แสดงผลประวัติการศึกษา สาขาวิชา มหาวิทยาลัย และปีที่สำเร็จการศึกษา -->
+        <section id="education">
+            <h2>Education</h2>
+            <article>
+                <h3>Bachelor of Science in Chemistry</h3>
+                <p>ABC University - Graduated in 2019</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- ประกาศส่วนของช่องทางการติดต่อ -->
+    <!-- ส่วนของ link ปลายทางที่แสดงผล Email, Phone, LinkedIn -->
+    <footer>
+        <h2>Contact Me</h2>
+        <address>
+            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">johndoe</a></p>
+        </address>
+    </footer>
+</body>
+</html>
